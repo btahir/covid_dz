@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "COVID-19 In Washington State",
-            "content": "Hello World!",
+            "content": "Result Total_Tested Percent . 0 Negative | 25,328 | 93% | . 1 Positive | 1,793 | 7% | . Age_Group Percent_Tested Percent_Deaths . 0 &lt;19 | 2% | 0% | . 1 20-29 | 8% | 0% | . 2 30-39 | 14% | 0% | . 3 40-49 | 13% | 2% | . 4 50-59 | 17% | 5% | . 5 60-69 | 16% | 10% | . 6 70-79 | 15% | 23% | . 7 80+ | 14% | 60% | . Sex Percent_Cases Percent_Deaths . 0 Female | 50% | 56% | . 1 Male | 45% | 35% | . 2 Unknown | 6% | 9% | . For example, here is a footnote 1. And another 2 1. This is the footnote.↩ . 2. This is the other footnote. You can even have a link!↩ .",
             "url": "https://btahir.github.io/covid_dz/covid-wa/",
             "relUrl": "/covid-wa/",
             "date": " • Mar 21, 2020"
