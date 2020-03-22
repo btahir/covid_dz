@@ -1,7 +1,7 @@
 ---
 keywords: fastai
 description: Tracking coronavirus cases by county, age and gender across Washington
-title: COVID-19 In Washington State
+title: Overview
 comments: true
 author: Bilal Tahir
 categories: [overview, interactive]
@@ -23,6 +23,130 @@ layout: notebook
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;div&gt;Hello World!&lt;/div&gt;&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>Hello World!</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">gcsfs</span>
+
+<span class="n">df_2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;gs://covid_wa/dfCasesByAge.csv&#39;</span><span class="p">)</span>
+
+<span class="n">df_2</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Age_Group</th>
+      <th>Pct_Cases</th>
+      <th>Pct_Deaths</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>&lt;19</td>
+      <td>2%</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>20-29</td>
+      <td>8%</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>30-39</td>
+      <td>14%</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>40-49</td>
+      <td>13%</td>
+      <td>2%</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>50-59</td>
+      <td>17%</td>
+      <td>5%</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
 
 </div>
     {% endraw %}
@@ -19750,7 +19874,7 @@ layout: notebook
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Visualizations by <a href="https://twitter.com/PratapVardhan">Pratap Vardhan</a><sup class="footnote-ref" id="fnref-1"><a href="#fn-1">1</a></sup></p>
+<p>Visualizations by <a href="https://github.com/btahir">Bilal Tahir</a><sup class="footnote-ref" id="fnref-1"><a href="#fn-1">1</a></sup></p>
 <div class="footnotes">
 <hr>
 <ol><li id="fn-1"><p>Source: <a href="https://systems.jhu.edu/research/public-health/ncov/">"COVID-19 Data Repository by Johns Hopkins CSSE"</a> <a href="https://github.com/CSSEGISandData/COVID-19">GitHub repository</a>. Link to <a href="https://github.com/pratapvardhan/notebooks/blob/master/covid19/covid19-overview.ipynb">notebook</a>, <a href="https://gramener.com/enumter/covid19/">orignal interactive</a><a href="#fnref-1" class="footnote">&#8617;</a></p></li>
