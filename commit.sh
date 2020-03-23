@@ -1,4 +1,4 @@
-echo "Shutting down at: $(date)!" >> deploy_latest
+echo "Redeploying at: $(date)!" >> deploy_latest
 git add deploy_latest
-git commit -m "Shutting down at: $(date)!"
+git commit -m "Redeploying at: $(date)!"
 git push
