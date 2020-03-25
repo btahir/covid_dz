@@ -511,58 +511,57 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">FileNotFoundError</span>                         Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-15-33221dee6e03&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-red-fg">#hide_input</span>
-<span class="ansi-green-fg">----&gt; 2</span><span class="ansi-red-fg"> </span>source <span class="ansi-blue-fg">=</span> pd<span class="ansi-blue-fg">.</span>read_csv<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;data/timeseries.csv&#39;</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span> source <span class="ansi-blue-fg">=</span> source<span class="ansi-blue-fg">[</span>source<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;County&#39;</span><span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">&#39;Total&#39;</span><span class="ansi-blue-fg">]</span>
-<span class="ansi-green-intense-fg ansi-bold">      4</span> 
-<span class="ansi-green-intense-fg ansi-bold">      5</span> confirmed <span class="ansi-blue-fg">=</span> source<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;Date&#39;</span><span class="ansi-blue-fg">,</span><span class="ansi-blue-fg">&#39;Confirmed&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">.</span>copy<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
 
-<span class="ansi-green-fg">/usr/local/lib/python3.7/site-packages/pandas/io/parsers.py</span> in <span class="ansi-cyan-fg">parser_f</span><span class="ansi-blue-fg">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, dialect, error_bad_lines, warn_bad_lines, delim_whitespace, low_memory, memory_map, float_precision)</span>
-<span class="ansi-green-intense-fg ansi-bold">    674</span>         )
-<span class="ansi-green-intense-fg ansi-bold">    675</span> 
-<span class="ansi-green-fg">--&gt; 676</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> _read<span class="ansi-blue-fg">(</span>filepath_or_buffer<span class="ansi-blue-fg">,</span> kwds<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    677</span> 
-<span class="ansi-green-intense-fg ansi-bold">    678</span>     parser_f<span class="ansi-blue-fg">.</span>__name__ <span class="ansi-blue-fg">=</span> name
+<div class="output_html rendered_html output_subarea output_execute_result">
 
-<span class="ansi-green-fg">/usr/local/lib/python3.7/site-packages/pandas/io/parsers.py</span> in <span class="ansi-cyan-fg">_read</span><span class="ansi-blue-fg">(filepath_or_buffer, kwds)</span>
-<span class="ansi-green-intense-fg ansi-bold">    446</span> 
-<span class="ansi-green-intense-fg ansi-bold">    447</span>     <span class="ansi-red-fg"># Create the parser.</span>
-<span class="ansi-green-fg">--&gt; 448</span><span class="ansi-red-fg">     </span>parser <span class="ansi-blue-fg">=</span> TextFileReader<span class="ansi-blue-fg">(</span>fp_or_buf<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwds<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    449</span> 
-<span class="ansi-green-intense-fg ansi-bold">    450</span>     <span class="ansi-green-fg">if</span> chunksize <span class="ansi-green-fg">or</span> iterator<span class="ansi-blue-fg">:</span>
+<div id="altair-viz-8202c0d2afec4904a2d7ab5f46830c1f"></div>
+<script type="text/javascript">
+  (function(spec, embedOpt){
+    const outputDiv = document.getElementById("altair-viz-8202c0d2afec4904a2d7ab5f46830c1f");
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.0.2?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
 
-<span class="ansi-green-fg">/usr/local/lib/python3.7/site-packages/pandas/io/parsers.py</span> in <span class="ansi-cyan-fg">__init__</span><span class="ansi-blue-fg">(self, f, engine, **kwds)</span>
-<span class="ansi-green-intense-fg ansi-bold">    878</span>             self<span class="ansi-blue-fg">.</span>options<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#34;has_index_names&#34;</span><span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">=</span> kwds<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#34;has_index_names&#34;</span><span class="ansi-blue-fg">]</span>
-<span class="ansi-green-intense-fg ansi-bold">    879</span> 
-<span class="ansi-green-fg">--&gt; 880</span><span class="ansi-red-fg">         </span>self<span class="ansi-blue-fg">.</span>_make_engine<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>engine<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    881</span> 
-<span class="ansi-green-intense-fg ansi-bold">    882</span>     <span class="ansi-green-fg">def</span> close<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+    function loadScript(lib) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = paths[lib];
+        s.async = true;
+        s.onload = () => resolve(paths[lib]);
+        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      });
+    }
 
-<span class="ansi-green-fg">/usr/local/lib/python3.7/site-packages/pandas/io/parsers.py</span> in <span class="ansi-cyan-fg">_make_engine</span><span class="ansi-blue-fg">(self, engine)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1112</span>     <span class="ansi-green-fg">def</span> _make_engine<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> engine<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#34;c&#34;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">   1113</span>         <span class="ansi-green-fg">if</span> engine <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">&#34;c&#34;</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">-&gt; 1114</span><span class="ansi-red-fg">             </span>self<span class="ansi-blue-fg">.</span>_engine <span class="ansi-blue-fg">=</span> CParserWrapper<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>f<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>self<span class="ansi-blue-fg">.</span>options<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1115</span>         <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">   1116</span>             <span class="ansi-green-fg">if</span> engine <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">&#34;python&#34;</span><span class="ansi-blue-fg">:</span>
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
 
-<span class="ansi-green-fg">/usr/local/lib/python3.7/site-packages/pandas/io/parsers.py</span> in <span class="ansi-cyan-fg">__init__</span><span class="ansi-blue-fg">(self, src, **kwds)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1889</span>         kwds<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#34;usecols&#34;</span><span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>usecols
-<span class="ansi-green-intense-fg ansi-bold">   1890</span> 
-<span class="ansi-green-fg">-&gt; 1891</span><span class="ansi-red-fg">         </span>self<span class="ansi-blue-fg">.</span>_reader <span class="ansi-blue-fg">=</span> parsers<span class="ansi-blue-fg">.</span>TextReader<span class="ansi-blue-fg">(</span>src<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwds<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1892</span>         self<span class="ansi-blue-fg">.</span>unnamed_cols <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_reader<span class="ansi-blue-fg">.</span>unnamed_cols
-<span class="ansi-green-intense-fg ansi-bold">   1893</span> 
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
 
-<span class="ansi-green-fg">pandas/_libs/parsers.pyx</span> in <span class="ansi-cyan-fg">pandas._libs.parsers.TextReader.__cinit__</span><span class="ansi-blue-fg">()</span>
-
-<span class="ansi-green-fg">pandas/_libs/parsers.pyx</span> in <span class="ansi-cyan-fg">pandas._libs.parsers.TextReader._setup_parser_source</span><span class="ansi-blue-fg">()</span>
-
-<span class="ansi-red-fg">FileNotFoundError</span>: [Errno 2] File data/timeseries.csv does not exist: &#39;data/timeseries.csv&#39;</pre>
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else if (typeof vegaEmbed === "function") {
+      displayChart(vegaEmbed);
+    } else {
+      loadScript("vega")
+        .then(() => loadScript("vega-lite"))
+        .then(() => loadScript("vega-embed"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "axis": {"labelFontSize": 12, "titleFontSize": 12}, "title": {"fontSize": 18}}, "layer": [{"data": {"name": "data-41bd24c9ca286232531b5c74c9474283"}, "mark": {"type": "line", "interpolate": "basis"}, "encoding": {"color": {"type": "nominal", "field": "Category"}, "x": {"type": "temporal", "axis": {"format": "%x", "title": "DATE"}, "field": "Date", "title": "Date"}, "y": {"type": "quantitative", "field": "Cases", "title": "Cases"}}}, {"data": {"name": "data-2a9f8eab6ee9a073b143266ffd8fa354"}, "mark": "point", "encoding": {"opacity": {"value": 0}, "x": {"type": "temporal", "field": "Date"}}, "selection": {"selector002": {"type": "single", "nearest": true, "on": "mouseover", "fields": ["Date"], "empty": "none"}}, "title": "Total Cases Over Time"}, {"data": {"name": "data-41bd24c9ca286232531b5c74c9474283"}, "mark": "point", "encoding": {"color": {"type": "nominal", "field": "Category"}, "opacity": {"condition": {"value": 1, "selection": "selector002"}, "value": 0}, "x": {"type": "temporal", "axis": {"format": "%x", "title": "DATE"}, "field": "Date", "title": "Date"}, "y": {"type": "quantitative", "field": "Cases", "title": "Cases"}}}, {"data": {"name": "data-2a9f8eab6ee9a073b143266ffd8fa354"}, "mark": {"type": "rule", "color": "gray"}, "encoding": {"x": {"type": "temporal", "field": "Date"}}, "transform": [{"filter": {"selection": "selector002"}}]}, {"data": {"name": "data-41bd24c9ca286232531b5c74c9474283"}, "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5}, "encoding": {"color": {"type": "nominal", "field": "Category"}, "text": {"condition": {"type": "quantitative", "field": "Cases", "selection": "selector002"}, "value": " "}, "x": {"type": "temporal", "axis": {"format": "%x", "title": "DATE"}, "field": "Date", "title": "Date"}, "y": {"type": "quantitative", "field": "Cases", "title": "Cases"}}}], "height": 400, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.0.2.json", "datasets": {"data-41bd24c9ca286232531b5c74c9474283": [{"Date": "2020-03-22", "Cases": 1996, "Category": "Confirmed"}, {"Date": "2020-03-08", "Cases": 102, "Category": "Confirmed"}, {"Date": "2020-03-07", "Cases": 79, "Category": "Confirmed"}, {"Date": "2020-03-11", "Cases": 267, "Category": "Confirmed"}, {"Date": "2020-03-20", "Cases": 1524, "Category": "Confirmed"}, {"Date": "2020-03-15", "Cases": 642, "Category": "Confirmed"}, {"Date": "2020-03-19", "Cases": 1187, "Category": "Confirmed"}, {"Date": "2020-03-17", "Cases": 904, "Category": "Confirmed"}, {"Date": "2020-03-12", "Cases": 366, "Category": "Confirmed"}, {"Date": "2020-03-16", "Cases": 769, "Category": "Confirmed"}, {"Date": "2020-03-13", "Cases": 457, "Category": "Confirmed"}, {"Date": "2020-03-23", "Cases": 2221, "Category": "Confirmed"}, {"Date": "2020-03-09", "Cases": 136, "Category": "Confirmed"}, {"Date": "2020-03-10", "Cases": 162, "Category": "Confirmed"}, {"Date": "2020-03-14", "Cases": 568, "Category": "Confirmed"}, {"Date": "2020-03-21", "Cases": 1793, "Category": "Confirmed"}, {"Date": "2020-03-24", "Cases": 2469, "Category": "Confirmed"}, {"Date": "2020-03-22", "Cases": "95", "Category": "Deaths"}, {"Date": "2020-03-08", "Cases": "16", "Category": "Deaths"}, {"Date": "2020-03-07", "Cases": "11", "Category": "Deaths"}, {"Date": "2020-03-11", "Cases": "24", "Category": "Deaths"}, {"Date": "2020-03-20", "Cases": "83", "Category": "Deaths"}, {"Date": "2020-03-15", "Cases": "40", "Category": "Deaths"}, {"Date": "2020-03-19", "Cases": "66", "Category": "Deaths"}, {"Date": "2020-03-17", "Cases": "48", "Category": "Deaths"}, {"Date": "2020-03-12", "Cases": "29", "Category": "Deaths"}, {"Date": "2020-03-16", "Cases": "42", "Category": "Deaths"}, {"Date": "2020-03-13", "Cases": "31", "Category": "Deaths"}, {"Date": "2020-03-23", "Cases": "110", "Category": "Deaths"}, {"Date": "2020-03-09", "Cases": "18", "Category": "Deaths"}, {"Date": "2020-03-10", "Cases": "22", "Category": "Deaths"}, {"Date": "2020-03-14", "Cases": "37", "Category": "Deaths"}, {"Date": "2020-03-21", "Cases": "94", "Category": "Deaths"}, {"Date": "2020-03-24", "Cases": "123", "Category": "Deaths"}], "data-2a9f8eab6ee9a073b143266ffd8fa354": [{"County": "Total", "Confirmed": 1996, "Deaths": "95", "Date": "2020-03-22"}, {"County": "Total", "Confirmed": 102, "Deaths": "16", "Date": "2020-03-08"}, {"County": "Total", "Confirmed": 79, "Deaths": "11", "Date": "2020-03-07"}, {"County": "Total", "Confirmed": 267, "Deaths": "24", "Date": "2020-03-11"}, {"County": "Total", "Confirmed": 1524, "Deaths": "83", "Date": "2020-03-20"}, {"County": "Total", "Confirmed": 642, "Deaths": "40", "Date": "2020-03-15"}, {"County": "Total", "Confirmed": 1187, "Deaths": "66", "Date": "2020-03-19"}, {"County": "Total", "Confirmed": 904, "Deaths": "48", "Date": "2020-03-17"}, {"County": "Total", "Confirmed": 366, "Deaths": "29", "Date": "2020-03-12"}, {"County": "Total", "Confirmed": 769, "Deaths": "42", "Date": "2020-03-16"}, {"County": "Total", "Confirmed": 457, "Deaths": "31", "Date": "2020-03-13"}, {"County": "Total", "Confirmed": 2221, "Deaths": "110", "Date": "2020-03-23"}, {"County": "Total", "Confirmed": 136, "Deaths": "18", "Date": "2020-03-09"}, {"County": "Total", "Confirmed": 162, "Deaths": "22", "Date": "2020-03-10"}, {"County": "Total", "Confirmed": 568, "Deaths": "37", "Date": "2020-03-14"}, {"County": "Total", "Confirmed": 1793, "Deaths": "94", "Date": "2020-03-21"}, {"County": "Total", "Confirmed": 2469, "Deaths": "123", "Date": "2020-03-24"}]}}, {"mode": "vega-lite"});
+</script>
 </div>
+
 </div>
 
 </div>
