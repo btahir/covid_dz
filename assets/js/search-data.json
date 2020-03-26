@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "COVID-19 In Washington State",
-            "content": "Total Confirmed Cases: 2469 Total Deaths: 123 updated at: 2020-03-24 . Tip: Hover over the counties to see more details. . Result Total_Tested Percent . 0 Negative | 31,712 | 93% | . 1 Positive | 2,469 | 7% | . Age_Group Percent_Tested Percent_Deaths . 0 &lt;19 | 2% | 0% | . 1 20-29 | 9% | 0% | . 2 30-39 | 14% | 0% | . 3 40-49 | 13% | 2% | . 4 50-59 | 17% | 5% | . 5 60-69 | 16% | 12% | . 6 70-79 | 15% | 30% | . 7 80+ | 14% | 50% | . Sex Percent_Cases Percent_Deaths . 0 Female | 51% | 54% | . 1 Male | 46% | 44% | . 2 Unknown | 4% | 2% | . 1. Washington Data source↩ . 2. Fastpages COVID-19 Dashboard↩ . 3. County Map Data source↩ .",
+            "content": "Total Confirmed Cases: 2580 Total Deaths: 132 updated at: 2020-03-25 . Tip: Hover over the counties to see more details. . Result Total_Tested Percent . 0 Negative | 31,712 | 93% | . 1 Positive | 2,580 | 7% | . Age_Group Percent_Tested Percent_Deaths . 0 &lt;19 | 2% | 0% | . 1 20-29 | 9% | 0% | . 2 30-39 | 14% | 0% | . 3 40-49 | 13% | 2% | . 4 50-59 | 17% | 5% | . 5 60-69 | 16% | 12% | . 6 70-79 | 15% | 30% | . 7 80+ | 14% | 50% | . Sex Percent_Cases Percent_Deaths . 0 Female | 51% | 54% | . 1 Male | 46% | 44% | . 2 Unknown | 4% | 2% | . 1. Washington Data source↩ . 2. Fastpages COVID-19 Dashboard↩ . 3. County Map Data source↩ .",
             "url": "https://btahir.github.io/covid_dz/covid-wa/",
             "relUrl": "/covid-wa/",
             "date": " • Mar 21, 2020"
