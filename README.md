@@ -10,3 +10,6 @@ Tracking coronavirus cases by county, age and gender across Washington
 
 https://btahir.github.io/covid_dz/
 
+**UPDATE**: The Washington Coronavirus data page got a fresh look and is way nicer now. It's also mysteriously similar to mine ;) 
+
+Since its very similar to my dashboard, I am not updatng this project any longer. You can go here for the WA data: https://www.doh.wa.gov/emergencies/coronavirus
